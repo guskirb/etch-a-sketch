@@ -1,0 +1,21 @@
+body {
+  min-height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  flex-flow: wrap;
+  align-content: flex-start;
+  border: solid 3px black;
+  width: 480px;
+  height: 480px;
+}
+
+#container div {
+  height: 28px;
+  width: 28px;
+  border: solid 1px black;
+}
