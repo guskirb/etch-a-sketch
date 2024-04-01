@@ -3,7 +3,7 @@ const container = document.getElementById("container");
 const gridBox = container.getElementsByTagName("div");
 const sizeBtn = document.getElementById("sizeButton");
 const sizeInput = document.getElementById("sizeInput");
-let penColor = "black";
+var penColor = "black";
 
 function erase() {
     while (container.hasChildNodes()) {
@@ -35,7 +35,7 @@ sizeBtn.addEventListener("click", function () {
             newSize.addEventListener("mouseover", function () {
                 newSize.style.backgroundColor = penColor;
                 newSize.style.borderColor = penColor;
-            });;
+            });
         };
     }
 })
