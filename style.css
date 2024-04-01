@@ -1,16 +1,26 @@
+.coming-soon-regular {
+  font-family: "Coming Soon", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   min-height: 98vh;
   display: flex;
   flex-flow: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  background-image: url(pics/paper.jpg);
+  background-repeat: repeat-x;
+  font-family: "Coming Soon", sans-serif;
+  flex: 1, 1, 1;
 }
 
 #container {
   display: flex;
   flex-flow: wrap;
   align-content: flex-start;
-  border: solid 3px black;
+  border: solid 2px black;
   border-radius: 5px;
   width: 500px;
   height: 500px;
@@ -29,12 +39,17 @@ body {
 }
 
 input {
-  border: solid 3px black;
+  border: solid 2px black;
   border-radius: 5px;
+  font-family: "Coming Soon", sans-serif;
+  font-size: 18px;
 }
-button {
-  border: solid 3px black;
+
+#sizeButton {
+  border: solid 2px black;
   border-radius: 5px;
+  font-family: "Coming Soon", sans-serif;
+  font-size: 18px;
 }
 
 #buttons {
@@ -42,13 +57,39 @@ button {
   padding-top: 10px;
 }
 
+#buttons button {
+  background: none;
+  border: none;
+}
+
 img {
   height: 50px;
   width: 50px;
-  padding-left: 5px;
-  padding-right: 5px;
 }
 
-.eraser {
+#penPic {
+  height: 60px;
+  width: 60px;
+}
+
+#eraser {
   margin-left: auto;
+}
+
+#notepad {
+  border: solid 2px black;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin-left: -163px;
+}
+
+#logo {
+  display: flex;
+  align-self: flex-end;
+  left: 0;
+  bottom: 0;
+  gap: 5px;
 }

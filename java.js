@@ -3,6 +3,9 @@ const container = document.getElementById("container");
 const gridBox = container.getElementsByTagName("div");
 const sizeBtn = document.getElementById("sizeButton");
 const sizeInput = document.getElementById("sizeInput");
+const penButton = document.getElementById("penPic")
+const colorPenButton = document.getElementById("colorPenPic")
+const eraserButton = document.getElementById("eraserPic")
 var penColor = "black";
 
 function erase() {
@@ -52,3 +55,27 @@ for (let i = 0; i < gridBox.length; i++) {
         fillIn.style.borderColor = penColor;
     });
 };
+
+penButton.addEventListener("click", function () {
+    colorPenButton.style.height = "50px";
+    colorPenButton.style.width = "50px";
+    penButton.style.height = "60px";
+    penButton.style.width = "60px";
+    penColor = "black";
+})
+
+colorPenButton.addEventListener("click", function () {
+    penButton.style.height = "50px";
+    penButton.style.width = "50px";
+    colorPenButton.style.height = "60px";
+    colorPenButton.style.width = "60px";
+    penColor = "red";
+
+})
+
+eraserButton.addEventListener("click", function () {
+    for (let x = 0; x < gridBox.length; x++) {
+        gridBox[x].style.borderColor = "#b8b8b896";
+        gridBox[x].style.backgroundColor = "white";
+    }
+})

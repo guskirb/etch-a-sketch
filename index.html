@@ -7,11 +7,16 @@
     <title>Etch-a-Sketch!</title>
     <link rel="stylesheet" href="style.css">
     <script src="java.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div></div>
-    <div>
+    <div id="logo"><a href="https://github.com/guskirb"><img id="github" src="pics/github.png" alt="github logo"></a>
+        <h3>by Gus Kirby</h3>
+    </div>
+    <div id="notepad">
         <div id="playArea">
             <div id="inputField">
                 <input type="text" id="sizeInput" placeholder="Enter a Value">
@@ -21,9 +26,9 @@
             </div>
         </div>
         <div id="buttons">
-            <img src="pics/pen.png" class="pen">
-            <img src="pics/colorpen.png" class="colorPen">
-            <img src="pics/eraser.png" class="eraser">
+            <button id="pen"><img src="pics/pen.png" id="penPic" alt="pen lineart"></button>
+            <button id="colorPen"><img src="pics/colorpen.png" id="colorPenPic" alt="color pen lineart"></button>
+            <button id="eraser"><img src="pics/eraser.png" id="eraserPic" alt="eraser lineart"></button>
         </div>
     </div>
     <div></div>
